@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1235</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0" rowspan="4">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="3" column="0">
+       <widget class="PlotWidget" name="image2GV"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="PlotWidget" name="image1GV"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QToolButton" name="components2">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>components of image2</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="image1">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>image1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="components1">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>components of image1</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="image2">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>image2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="PlotWidget" name="image2EditedGV"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="PlotWidget" name="Imag1EditedGV"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Arial Rounded MT Bold</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="text">
+         <string>Component1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="ComImg1">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Img1,Img2</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSlider" name="slider1">
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="singleStep">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QToolButton" name="combo3">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Imaginary,Real,Phase,Magnitude,Unit-Magnitude,Unit-Phase</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="component2Label">
+        <property name="font">
+         <font>
+          <family>Arial Rounded MT Bold</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="text">
+         <string>Component2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QToolButton" name="ComImg2">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Img1,Img2</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QSlider" name="slider2">
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="singleStep">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="4">
+       <widget class="QToolButton" name="combo4">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Imaginary,Real,Phase,Magnitude,Unit-Magnitude,Unit-Phase</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Poor Richard</family>
+          <pointsize>14</pointsize>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="text">
+         <string>Mixer Output to:</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="S1Label">
+        <property name="font">
+         <font>
+          <family>Orbitron</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="S2Label">
+        <property name="font">
+         <font>
+          <family>Orbitron</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="2">
+       <widget class="QLabel" name="Output2Label">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="text">
+         <string>OutPut2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="outpu1Label">
+        <property name="font">
+         <font>
+          <family>Trebuchet MS</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="text">
+         <string>OutPut1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="PlotWidget" name="Output1"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="PlotWidget" name="Output2"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="OutputsComponents">
+        <property name="font">
+         <font>
+          <family>Poor Richard</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Outputs</string>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1235</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFTReal1">
+   <property name="text">
+    <string>FTReal1</string>
+   </property>
+  </action>
+  <action name="actionFTReal2">
+   <property name="text">
+    <string>FTReal2</string>
+   </property>
+  </action>
+  <action name="actionFTImag1">
+   <property name="text">
+    <string>FTImag1</string>
+   </property>
+  </action>
+  <action name="actionFTImag2">
+   <property name="text">
+    <string>FTImag2</string>
+   </property>
+  </action>
+  <action name="actionFTMag1">
+   <property name="text">
+    <string>FTMag1</string>
+   </property>
+  </action>
+  <action name="actionFTMag2">
+   <property name="text">
+    <string>FTMag2</string>
+   </property>
+  </action>
+  <action name="actionFTPhase1">
+   <property name="text">
+    <string>FTPhase1</string>
+   </property>
+  </action>
+  <action name="actionFTPhase2">
+   <property name="text">
+    <string>FTPhase2</string>
+   </property>
+  </action>
+  <action name="actionimage1C1">
+   <property name="text">
+    <string>image1C1</string>
+   </property>
+  </action>
+  <action name="actionimageC2">
+   <property name="text">
+    <string>image1C2</string>
+   </property>
+  </action>
+  <action name="actionimage2C1">
+   <property name="text">
+    <string>image2C1</string>
+   </property>
+  </action>
+  <action name="actionimage2C2">
+   <property name="text">
+    <string>image2C2</string>
+   </property>
+  </action>
+  <action name="actionimage1C2">
+   <property name="text">
+    <string>image1C2</string>
+   </property>
+  </action>
+  <action name="actionoutput1">
+   <property name="text">
+    <string>output1</string>
+   </property>
+  </action>
+  <action name="actionoutput2">
+   <property name="text">
+    <string>output2</string>
+   </property>
+  </action>
+  <action name="actionc1Mag">
+   <property name="text">
+    <string>c1Mag</string>
+   </property>
+  </action>
+  <action name="actionc1Phase">
+   <property name="text">
+    <string>c1Phase</string>
+   </property>
+  </action>
+  <action name="actionc1Real">
+   <property name="text">
+    <string>c1Real</string>
+   </property>
+  </action>
+  <action name="actionc1UnitMag">
+   <property name="text">
+    <string>c1UnitMag</string>
+   </property>
+  </action>
+  <action name="actionc1UnitPhase">
+   <property name="text">
+    <string>c1UnitPhase</string>
+   </property>
+  </action>
+  <action name="actionc2Mag">
+   <property name="text">
+    <string>c2Mag</string>
+   </property>
+  </action>
+  <action name="actionc2Phase">
+   <property name="text">
+    <string>c2Phase</string>
+   </property>
+  </action>
+  <action name="actionc2Real">
+   <property name="text">
+    <string>c2Real</string>
+   </property>
+  </action>
+  <action name="actionc2Imag">
+   <property name="text">
+    <string>c2Imag</string>
+   </property>
+  </action>
+  <action name="actionc2UnitMag">
+   <property name="text">
+    <string>c2UnitMag</string>
+   </property>
+  </action>
+  <action name="actionc2UnitPhase">
+   <property name="text">
+    <string>c2UnitPhase</string>
+   </property>
+  </action>
+  <action name="actionc1Imag">
+   <property name="text">
+    <string>c1Imag</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>slider1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>S1Label</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1135</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1159</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>S2Label</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1085</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1153</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
